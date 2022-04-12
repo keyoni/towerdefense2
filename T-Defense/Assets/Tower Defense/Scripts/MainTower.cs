@@ -28,6 +28,7 @@ namespace Tower_Defense.Scripts
             Destroy(currentEnemy);
             if (_towerHp <= 0)
             {
+                print("Tower Destroyed!");
                 TowerDestroyed?.Invoke();
             }
         }
